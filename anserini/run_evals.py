@@ -1,3 +1,5 @@
+# This script runs retrieval for all b and k_1 values and generates files to be processed by run_trec_evals.py
+
 import os
 
 

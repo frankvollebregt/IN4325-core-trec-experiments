@@ -1,3 +1,6 @@
+# this script takes the retrieval results and extracts only the qid, docid and score, such that
+# the resulting file can be processed for SVM-rank training data
+
 import sys
 import pandas as pd
 
