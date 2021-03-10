@@ -1,0 +1,21 @@
+import os
+
+
+def run_trec():
+    # b values
+    bs = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    # k1 values
+    ks = [0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4]
+
+    for b in bs:
+        for k in ks:
+            # run the analysis
+            command = "tools/eval/trec_eval.9.0.4/trec_eval -c -mmap -mrecall.1000 -mndcg -mrecip_rank -mP.50" \
+                      " src/main/resources/topics-and-qrels/2019qrels-docs.txt" \
+                      " runs/run.msmarco-doc.bm25.b{}.k{}.txt".format(b, k)
+            print('trec_eval for b = {}, k1 = {}'.format(b, k))
+            os.system(command)
+
+
+if __name__ == '__main__':
+    run_trec()
