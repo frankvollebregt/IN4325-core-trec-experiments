@@ -1,3 +1,5 @@
+# Takes data from a run, and shows the BM25 score over the rank for the queries on line 9
+
 import pandas as pd
 import matplotlib.pyplot as plt
 

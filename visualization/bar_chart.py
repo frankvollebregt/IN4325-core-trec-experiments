@@ -1,3 +1,5 @@
+# script that creates histograms to compare the different trec scores more visually
+
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
