@@ -1,3 +1,6 @@
+# This is a simple script that extracts the length of each query in number of characters. This could have been
+# added as a query-dependent feature, but was omitted in the end
+
 import sys
 import pandas as pd
 
